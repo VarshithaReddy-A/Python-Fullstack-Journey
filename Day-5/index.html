@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-shadow: 1px 1px 1px blue;
+        }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: rgb(7, 25, 43);
+            text-align: center;
+            padding:30px;
+        }
+        header>a{
+            color:azure;
+            background-color: rgb(29, 106, 183);
+            padding:10px;
+            border-radius: 10px;
+            margin:10px;
+        }
+        .s1{
+            height: 400px;
+            background-size: 100% 100%;
+            color:white;
+            text-align: center;
+            padding-top: 200px; 
+            background-image: linear-gradient(rgba(0,0,0,0.6),
+            rgba(0,0,0,0.6)), url(https://img.magnific.com/premium-photo/creative-glowing-blue-coding-programming-background-with-blank-square-mock-up-frame-big-data-code-concept-3d-rendering_670147-2288.jpg);
+        }
+        .s2{
+            h1{
+                text-shadow: 1px 1px 5px 2px violet;
+            }
+            background-color:whitesmoke;
+            text-align: center;
+            height:500px;
+            padding-top: 150px;
+        }
+        .s2>ul>li{
+            color:white;
+            margin:10px;
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            height:120px;
+            display:inline-block;
+        }
+        .s3{
+            height:500px;
+            text-align: center;
+            padding-top: 150px;
+        }
+        .child{
+            background-color: rgba(176,237,236,0.742);
+            border:3px solid blue;
+            display:inline-block;
+            width: 300px;
+            height: 200px;
+            padding:40px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+        </header>
+        <section class="s1">
+            <h1>Learn CSS Through Projects</h1>
+            <p>This Project demonstrates css colors, Backgrounds, Inline &Inline-Block,Box Model, and Fonts in one modern UI.</p>
+        </section>
+        <section class="s2">
+            <h1>CSS Colors</h1>
+            <ul>
+                <li style="background-color: red;">Red</li>
+                <li style="background-color: blue;">Blue</li>
+                <li style="background-color: green;">Green</li>
+                <li style="background-color: violet;">Violet</li>
+            </ul>
+        </section>
+        <section class="s3">
+        <h1>CSS Box Model</h1>
+        <div class="card">
+            <div class="child">
+                <h1>Card One</h1>
+                <p>This card demonstrates padding, border, margin, width, and background color.</p>
+            </div>
+            <div class="child">
+                 <h1>Card Two</h1>
+                <p>This card demonstrates padding, border, margin, width, and background color.</p>
+            </div>
+        </div>
+    </section>
+    <section class="s2" style="font-size:1.6rem">
+        <h1>CSS Fonts</h1>
+        <div style="font-weight:300;padding:10px;">light font weight -300</div>
+        <div style="font-weight:400;padding:10px;">normal font weight -400</div>
+        <div style="font-weight:700;padding:10px;">bold font weight -700</div>
+        <p>This paragraph demonstrates different line heights, letter-spacing,font-size, and font-family properties in CSS.</p>
+    </section>
+     <footer style="background:rgb(14, 14, 43);color:white;padding:40px; text-align:center;">
+        CSS Learning Project Template
+    </footer>
+    </body>
+</html>
