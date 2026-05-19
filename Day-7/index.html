@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <title>Portfolio</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:rgb(27,26,26);
+            color:white;
+        }
+
+        /* HEADER */
+
+        header{
+            background-color: rgb(27, 26, 26);
+            color:white;
+            padding:20px 40px;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        }
+
+        header > div{
+            display:flex;
+            gap:20px;
+            align-items:center;
+        }
+
+        .left div{
+            background:green;
+            padding:10px;
+            border-radius:50%;
+        }
+
+        /* HERO SECTION */
+
+        .s1{
+            background-color: rgb(27, 26, 26);
+            color:white;
+            padding:40px;
+            display:flex;
+            min-height:80vh;
+            align-items:center;
+            gap:40px;
+        }
+
+        .s1 > div{
+            flex-basis:50%;
+        }
+
+        .s1 img{
+            width:100%;
+            border-radius:10px;
+        }
+
+        .s1 h3,
+        .s1 h4,
+        .s1 p{
+            padding-bottom:15px;
+        }
+
+        button{
+            padding:10px 20px;
+            border-radius:10px;
+            background:green;
+            color:white;
+            border:none;
+            cursor:pointer;
+            margin-right:10px;
+        }
+
+        /* SECTION 2 */
+
+        .s2{
+            background-color: rgba(8,8,8,0.88);
+            height:50vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .s2 > div{
+            background-color:green;
+            padding:20px 40px;
+            color:white;
+            border-radius:10px;
+            font-size:30px;
+            font-weight:bold;
+        }
+
+        /* SERVICES */
+
+        .s3{
+            background-color: rgb(27, 26, 26);
+            color:white;
+            padding:40px;
+        }
+
+        .s3 h1{
+            text-align:center;
+            margin-bottom:30px;
+        }
+
+        .s3container{
+            display:flex;
+            flex-wrap:wrap;
+            gap:20px;
+            justify-content:center;
+        }
+
+        .s3card{
+            width:300px;
+            background:#1f1f1f;
+            padding:20px;
+            border-radius:10px;
+            text-align:center;
+        }
+
+        .s3card i{
+            font-size:35px;
+            color:green;
+            margin-bottom:15px;
+        }
+
+        .s3card h3{
+            margin-bottom:10px;
+        }
+
+        /* PROJECTS */
+
+        .s4{
+            background-color: rgb(27, 26, 26);
+            color:white;
+            padding:40px;
+            text-align:center;
+        }
+
+        .s4 h1{
+            margin-bottom:30px;
+        }
+
+        .s4container{
+            display:flex;
+            gap:20px;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+
+        .s4card{
+            background:#1f1f1f;
+            width:320px;
+            border-radius:10px;
+            overflow:hidden;
+            padding-bottom:20px;
+        }
+
+        .s4card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .s4card h3,
+        .s4card p{
+            margin:15px;
+        }
+
+        /* EDUCATION */
+
+        .s5{
+            background-color: rgb(27, 26, 26);
+            color:white;
+            padding:40px;
+            text-align:center;
+        }
+
+        .s5 h1{
+            margin-bottom:30px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin:auto;
+        }
+
+        td, th{
+            padding:20px;
+            text-align:center;
+            border:1px solid white;
+        }
+
+        /* FOOTER */
+
+        footer{
+            background:black;
+            color:white;
+            padding:20px 40px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .footer-icons{
+            display:flex;
+            gap:20px;
+            font-size:22px;
+        }
+
+        .footer-icons i{
+            cursor:pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="left">
+            <div>JD</div>
+            <h2>John Doe</h2>
+        </div>
+
+        <div class="right">
+            <div>Home</div>
+            <div>About</div>
+            <div>Services</div>
+            <div>Projects</div>
+            <div>Contact</div>
+        </div>
+
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="s1">
+
+        <div>
+
+            <h3>
+                Hi, I'm <span style="color:green;">John Doe</span>
+            </h3>
+
+            <h4>I build simple and clean websites.</h4>
+
+            <p>
+                I am a web development student who loves turning ideas
+                into real, working web pages.
+            </p>
+
+            <button>View Projects</button>
+            <button>Download CV</button>
+
+        </div>
+
+        <div>
+
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="">
+
+        </div>
+
+    </section>
+
+    <!-- SECTION 2 -->
+
+    <section class="s2">
+
+        <div>Full Stack Developer</div>
+
+    </section>
+
+    <!-- SERVICES -->
+
+    <section class="s3">
+
+        <h1>What I Do</h1>
+
+        <div class="s3container">
+
+            <div class="s3card">
+                <i class="fa-solid fa-desktop"></i>
+                <h3>Web Design</h3>
+                <p>Design clean and attractive websites that provide great user experience.</p>
+            </div>
+
+            <div class="s3card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Development</h3>
+                <p>Build responsive and functional websites using modern technologies.</p>
+            </div>
+
+            <div class="s3card">
+                <i class="fa-solid fa-palette"></i>
+                <h3>UI/UX Design</h3>
+                <p>Create simple and user-friendly designs that look great on all devices.</p>
+            </div>
+
+            <div class="s3card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>SEO & Analytics</h3>
+                <p>Improve website visibility and track performance with smart strategies.</p>
+            </div>
+
+            <div class="s3card">
+                <i class="fa-solid fa-rocket"></i>
+                <h3>Performance</h3>
+                <p>Optimize website for speed and ensure smooth performance.</p>
+            </div>
+
+            <div class="s3card">
+                <i class="fa-solid fa-headset"></i>
+                <h3>Support</h3>
+                <p>Provide support and maintenance to keep websites running smoothly.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section class="s4">
+
+        <h1>My Projects</h1>
+
+        <div class="s4container">
+
+            <div class="s4card">
+
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    A personal portfolio website built using HTML
+                    to showcase my skills and projects.
+                </p>
+
+                <button>View Project</button>
+
+            </div>
+
+            <div class="s4card">
+
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    A personal portfolio website built using HTML
+                    to showcase my skills and projects.
+                </p>
+
+                <button>View Project</button>
+
+            </div>
+
+            <div class="s4card">
+
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    A personal portfolio website built using HTML
+                    to showcase my skills and projects.
+                </p>
+
+                <button>View Project</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EDUCATION -->
+
+    <section class="s5">
+
+        <h1>Education</h1>
+
+        <table>
+
+            <tr style="background:green;">
+
+                <th>Course</th>
+                <th>College</th>
+                <th>Year</th>
+                <th>Percentage</th>
+
+            </tr>
+
+            <tr>
+
+                <td>B.Tech</td>
+                <td>Aditya University</td>
+                <td>2023 - 2027</td>
+                <td>85%</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Intermediate</td>
+                <td>ABC Junior College</td>
+                <td>2021 - 2023</td>
+                <td>92%</td>
+
+            </tr>
+
+            <tr>
+
+                <td>SSC</td>
+                <td>XYZ School</td>
+                <td>2020 - 2021</td>
+                <td>95%</td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div>
+            © 2024 John Doe. All rights reserved.
+        </div>
+
+        <div class="footer-icons">
+
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-twitter"></i>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
